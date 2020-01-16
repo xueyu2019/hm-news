@@ -1,5 +1,5 @@
 <template>
-  <div>注册</div>
+  <hm-button>注册</hm-button>
 </template>
 
 <script>

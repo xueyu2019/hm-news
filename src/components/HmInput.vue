@@ -63,6 +63,7 @@ export default {
     background-color: transparent;
     border-bottom: 1px solid #666;
     font-size: 20px;
+    outline: none;
     &.error{
       border-color: red;
     }

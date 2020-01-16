@@ -14,13 +14,14 @@
     </div>
     <div class="btn">
       <hm-button @click="login">登录</hm-button>
+      <!-- <van-button type="danger" round size="large">00</van-button> -->
     </div>
   </div>
 </template>
 
 <script>
 import HmInput from '../components/HmInput'
-import HmButton from '../components/HmButton'
+// import HmButton from '../components/HmButton'
 import axios from 'axios'
 export default {
   data () {
@@ -30,8 +31,8 @@ export default {
     }
   },
   components: {
-    HmInput,
-    HmButton
+    HmInput
+    // HmButton
   },
   methods: {
     async login () {
@@ -41,9 +42,9 @@ export default {
         password: this.password
       })
       if (res.data.statusCode === 401) {
-        alert('用户名或密码错误')
+        this.$toast.fail('用户名或密码错误')
       } else {
-        alert('登录成功')
+        this.$toast.success('登录成功')
       }
     }
   }
