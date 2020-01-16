@@ -1,8 +1,11 @@
 <template>
   <div id="app">
-    app
-    <i class="iconfont iconwode"></i>
+    <router-view></router-view>
   </div>
 </template>
+<script>
+export default {
 
+}
+</script>
 <style lang="scss"></style>
